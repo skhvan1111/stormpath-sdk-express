@@ -107,6 +107,7 @@ function createMiddleware(spConfig) {
   },autoRouter);
   autoRouter.getApplication = context.getApplication;
   autoRouter.spClient = context.spClient;
+  autoRouter.context = context;
 
   /*
     attachDefaults is used to manually bind middleware to
